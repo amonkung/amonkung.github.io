@@ -5,41 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ชลรัตร ทองอยู่เลิศ | Portfolio</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap');
+
     body {
       font-family: "Prompt", sans-serif;
-      background-color: #f8f8f8;
+      background: linear-gradient(135deg, #b3e5fc, #f8bbd0);
       text-align: center;
       margin: 0;
       padding: 0;
+      color: #333;
     }
+
     .card {
-      background: #fff;
-      width: 80%;
-      max-width: 800px;
+      background: #ffffffcc;
+      width: 85%;
+      max-width: 850px;
       margin: 2rem auto;
-      padding: 2rem;
-      border-radius: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 2.5rem;
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      backdrop-filter: blur(6px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
     img {
-      width: 200px;
+      width: 280px;
+      border-radius: 20px;
+      display: block;
+      margin: 0 auto 1.5rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
-    h1, h2 {
-      color: #222;
+
+    h1 {
+      color: #1a237e;
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
     }
-    h3 {
-      color: #e74c3c;
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.6;
     }
+
+    h2 {
+      color: #00695c;
+      background-color: #e0f7fa;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      margin: 2rem auto 1rem;
+      width: fit-content;
+      text-align: center;
+    }
+
     ul {
       text-align: left;
-      display: inline-block;
+      margin: 0 auto 1rem;
+      padding: 0;
+      max-width: 600px;
+      font-size: 1rem;
+      line-height: 1.8;
     }
+
     a {
-      color: #007bff;
+      color: #0288d1;
       text-decoration: none;
+      font-weight: 600;
     }
+
     a:hover {
+      color: #d81b60;
       text-decoration: underline;
+    }
+
+    .link-group a {
+      margin: 0 10px;
+      background: #bbdefb;
+      padding: 6px 12px;
+      border-radius: 10px;
+      transition: 0.2s;
+    }
+
+    .link-group a:hover {
+      background: #f48fb1;
+      color: white;
+    }
+
+    .emoji {
+      font-size: 1.3rem;
     }
   </style>
 </head>
@@ -48,56 +105,58 @@
   <div class="card">
     <img src="https://imgs.search.brave.com/y6u9rSMKrioaNQHaeCcsBoDgoWpVv2TQ3CZz-CJTpEk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9iYWRn/aXJsLWFuaW1lLmNv/bS93cC93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNC8wNi9iYWRn/aXJsX3Rpc2VyX3lv/a29fYy5qcGc" alt="Profile Image">
     <h1>ชลรัตร ทองอยู่เลิศ</h1>
-    <p>อายุ 19 ปี</p>
-    <p>ชอบเล่นเกม 🎮</p>
+    <p>อายุ 19 ปี | ชอบเล่นเกม 🎮</p>
 
-    <p>
-      <a href="https://www.youtube.com/@amonkung555">ติดตาม YouTube</a> |
-      <a href="https://github.com/amonkung">โปรไฟล์ GitHub</a>
-    </p>
+    <div class="link-group">
+      <a href="https://www.youtube.com/@amonkung555">YouTube</a>
+      <a href="https://github.com/amonkung">GitHub</a>
+    </div>
   </div>
 
   <div class="card">
-    <h2>1. ส่วนแนะนำตัว (Introduction / Profile)</h2>
+    <h2>1. 🌟 ส่วนแนะนำตัว (Introduction / Profile)</h2>
     <ul>
-      <li>ชื่อ: ชลรรัตร ทองอยู่เลิศ (Chonrawat Thongyoolert)</li>
-      <li>สถานะ: นักศึกษาปี 2</li>
-      <li>คณะวิทยาศาสตร์ สาขาเทคโนโลยรสารสนเทศ มหาวิทยาลัยราชภัฏอุดรธานี</li>
-      <li>ความสนใจ: AI, Web Development, Programming</li>
+      <li><b>ชื่อ:</b> ชลรรัตร ทองอยู่เลิศ (Chonrawat Thongyoolert)</li>
+      <li><b>สถานะ:</b> นักศึกษาปี 2</li>
+      <li><b>คณะวิทยาศาสตร์:</b> สาขาเทคโนโลยีสารสนเทศ มหาวิทยาลัยราชภัฏอุดรธานี</li>
+      <li><b>ความสนใจ:</b> AI, Web Development, Programming</li>
     </ul>
 
-    <h2>2. ทักษะ (Skills)</h2>
+    <h2>2. 💻 ทักษะ (Skills)</h2>
     <ul>
-      <li>Programming: Python, Java, HTML/CSS, JavaScript</li>
-      <li>AI & Data: TensorFlow, scikit-learn, Power BI, SQL</li>
-      <li>Tools: Git, VS Code, Figma, Google Colab</li>
-      <li>Soft Skills: การสื่อสาร, การทำงานเป็นทีม, การแก้ปัญหา</li>
+      <li><b>Programming:</b> Python, Java, HTML/CSS, JavaScript</li>
+      <li><b>AI & Data:</b> TensorFlow, scikit-learn, Power BI, SQL</li>
+      <li><b>Tools:</b> Git, VS Code, Figma</li>
+      <li><b>Soft Skills:</b> การสื่อสาร, การทำงานเป็นทีม, การแก้ปัญหา</li>
     </ul>
 
-    <h2>3. ผลงานที่ผ่านมา (Projects / Portfolio)</h2>
+    <h2>3. 🚀 ผลงานที่ผ่านมา (Projects / Portfolio)</h2>
     <ul>
-      <li>ทำเว็ปไซต์</li>
+      <li>🌐 สร้างเว็บไซต์ส่วนตัว</li>
       <li>🔗 <a href="https://github.com/amonkung/yorn-is-kai">ดูโค้ดบน GitHub</a></li>
     </ul>
 
-    <h2>4. การศึกษา (Education)</h2>
-    <p>คณะวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์  
+    <h2>4. 🎓 การศึกษา (Education)</h2>
+    <p>คณะวิทยาศาสตร์ สาขาเทคโนโลยีสารสนเทศ<br>
     มหาวิทยาลัยราชภัฏอุดรธานี (2567–ปัจจุบัน)</p>
 
-    <h2>5. กิจกรรมและผลงานอื่น ๆ (Activities / Achievements)</h2>
+    <h2>5. 🏅 กิจกรรมและผลงานอื่น ๆ (Activities / Achievements)</h2>
     <ul>
       <li>ผู้เข้าร่วมอบรม “Network”</li>
+      <li>แข่งอาโอวี”</li>
+      <li>แข่งการ์ด”</li>
+      <li>แข่งสร้างแมพมายคราฟ”</li>
     </ul>
 
-    <h2>6. ติดต่อ (Contact)</h2>
+    <h2>6. 📞 ติดต่อ (Contact)</h2>
     <ul>
-      <li>Email: amonkikuio@gmail.com</li>
-      <li>GitHub: <a href="https://github.com/amonkung">โปรไฟล์ GitHub</a></li>
-      <li>LinkedIn / Facebook: <a href="#https://www.facebook.com/amonkung.tohighway/">Facebook</a></li>
+      <li>Email: <a href="mailto:amonkikuio@gmail.com">amonkikuio@gmail.com</a></li>
+      <li>GitHub: <a href="https://github.com/amonkung">amonkung</a></li>
+      <li>Facebook: <a href="https://www.facebook.com/amonkung.tohighway/">amonkung tohighway</a></li>
     </ul>
 
-    <h2>7. องค์ประกอบเสริม (Career Interest)</h2>
-    <p>สนใจทำงานด้าน AI Engineer, Web Developer และ Coding ในอนาคต</p>
+    <h2>7. 💡 องค์ประกอบเสริม (Career Interest)</h2>
+    <p>สนใจทำงานด้าน AI Engineer, Web Developer, Codingและ พัฒนาเกมหรือสร้างเกม ในอนาคต</p>
   </div>
 
 </body>
